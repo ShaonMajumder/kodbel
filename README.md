@@ -1,4 +1,4 @@
-# Kodbel | | Another PHP MVC framework like Laravel
+# Kodbel | কদবেল | Another PHP MVC framework like Laravel
 For educational purposes only right now.
 ![alt text](kodbel.jpeg)
 

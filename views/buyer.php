@@ -1,24 +1,12 @@
 <?php
 /** @var $model \thecodeholic\phpmvc\Model */
 
-use app\controllers\MyRequest;
 use thecodeholic\phpmvc\form\Form;
 
 $form = new Form();
-$myrequest = new MyRequest();
 $this->title = 'Buyer';
 
 ?>
-
-
-<script>
-    // $( function() {
-    //     $("input[name='entry_at']").datepicker();
-    // } );
-    $(document).ready(function() {
-        $("input[name='entry_at']").datepicker('show');
-    });
-</script>
 
 <h1>Buyer Input</h1>
 
@@ -43,6 +31,3 @@ $this->title = 'Buyer';
     </div> -->
     <button class="btn btn-success">Submit</button>
 <?php Form::end() ?>
-
-
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>

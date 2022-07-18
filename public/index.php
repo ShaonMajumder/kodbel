@@ -10,6 +10,7 @@ $dotenv = \Dotenv\Dotenv::createImmutable(dirname(__DIR__));
 $dotenv->load();
 $config = [
     'userClass' => \app\models\User::class,
+    'buyerClass' => \app\models\Buyer::class,
     'db' => [
         'dsn' => $_ENV['DB_DSN'],
         'user' => $_ENV['DB_USER'],
@@ -34,5 +35,7 @@ $app->router->get('/about', [AboutController::class, 'index']);
 $app->router->get('/profile', [SiteController::class, 'profile']);
 $app->router->get('/buyer', [SiteController::class, 'buyer']);
 $app->router->post('/buyer', [SiteController::class, 'buyer']);
+$app->router->get('/report', [SiteController::class, 'report']);
+$app->router->post('/report', [SiteController::class, 'report']);
 
 $app->run();

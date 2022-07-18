@@ -8,6 +8,7 @@ $dotenv->load();
 
 $config = [
     'userClass' => \app\models\User::class,
+    'buyerClass' => \app\models\Buyer::class,
     'db' => [
         'dsn' => $_ENV['DB_DSN'],
         'user' => $_ENV['DB_USER'],

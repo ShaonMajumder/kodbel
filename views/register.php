@@ -1,11 +1,9 @@
 <?php
 /** @var $model \thecodeholic\phpmvc\Model */
 
-use app\controllers\MyRequest;
 use thecodeholic\phpmvc\form\Form;
 
 $form = new Form();
-$myrequest = new MyRequest();
 ?>
 
 <h1>Register</h1>
